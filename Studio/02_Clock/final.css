@@ -1,0 +1,70 @@
+body {
+	background-color: white;
+}
+
+#H {
+	position: absolute;
+	width: 300px;
+	top: 30%;
+	left: 5%;
+	-webkit-animation: rotation 60s infinite linear;
+}
+	#H1 {
+		position: absolute;
+		width: 300px;
+		top: 30%;
+		left: 5%;
+		-webkit-animation: rotation 30s infinite linear;
+		opacity: 0.4;
+
+	}
+	
+
+
+
+#M {
+	position: absolute;
+	width: 300px;
+	border-radius: 50%;
+	top: 30%;
+	left: 37%;
+	-webkit-animation: rotation 30s infinite linear;
+}
+	
+	#M1 {
+	position: absolute;
+	width: 300px;
+	border-radius: 50%;
+	top: 30%;
+	left: 37%;
+	-webkit-animation: rotation 10s infinite linear;
+	opacity: 0.4;
+}
+
+
+#S {
+	position: absolute;
+	width:300px;
+	top: 30%;
+	right: 5%;
+	-webkit-animation: rotation 10s infinite linear;
+}
+	
+	#S1 {
+	position: absolute;
+	width:300px;
+	top: 30%;
+	right: 5%;
+	-webkit-animation: rotation 5s infinite linear;
+	opacity: 0.4;
+}
+
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}

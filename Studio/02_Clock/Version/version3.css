@@ -1,0 +1,42 @@
+body {
+	background-image: url("http://wlpapers.com/images/high-resolution-space-1.jpg");
+	background-size: cover;                     
+}
+
+#H {
+	position: absolute;
+	width: 300px;
+	top: 15%;
+	left: 40%;
+	-webkit-animation: rotation 30s infinite linear;
+}
+
+
+
+#M {
+	position: absolute;
+	width: 250px;
+	top: 40%;
+	left: 30%;
+	-webkit-animation: rotation 15s infinite linear;
+}
+
+
+
+#S {
+	position: absolute;
+	width:200px;
+	top: 40%;
+	right: 30%;
+	-webkit-animation: rotation 2s infinite linear;
+}
+
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
