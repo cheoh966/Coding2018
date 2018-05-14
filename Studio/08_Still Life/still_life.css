@@ -1,0 +1,231 @@
+.ball *, .fruit * {
+	position: absolute; 
+	box-sizing:content-box;
+    -moz-box-sizing:content-box;}
+
+body {
+	background-color: #e5583d;
+}
+
+
+.kbd{
+	/*background-image: repeat-y;
+
+    color: #444;
+    line-height: 2.5em;
+    padding: 0.35em 0.9em 0.55em 0.5em;
+    margin: 0.15em;
+    background-color: #E5E5E5;
+    border-top: solid 0.1em #CCC;
+    border-right: solid 0.2em #AAA;
+    border-bottom: solid 0.3em #999;
+    border-left: solid 0.2em #BBB;
+    border-radius: 4px;  */
+
+  
+}
+
+
+
+
+
+
+
+
+.ball {
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	background: -webkit-gradient(radial, 200 130, 20, 200 140, 200,
+            from(#fefefe), color-stop(40%, #d7d9d8), to(#9b8475) );
+	border-radius: 100%;
+	top: 53%;
+	left: 8%;
+}
+
+
+.orange {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+	top: 600px;
+	left: 330px;
+	background-color: #fc7f01;
+	background: -webkit-gradient(radial, 40 60, 0, 50 70, 70,
+            from(#f9d8be), color-stop(30%, #fbc36f), to(#fc7f01));
+	border-radius: 100%;
+}
+
+.leave {
+	position: absolute;
+	width: 80px; 
+	height: 70px;
+	background-color: #459c05; 
+	background: -webkit-gradient(radial, 90 20, 0, 80 10, 70,
+            from(#b2d994), color-stop(30%, #b2d994), to(#459c05));
+	-moz-border-radius: 0px 100px;
+	-webkit-border-radius: 0px 100px;
+	border-radius: 0px 60px;
+	transform: rotate(-30deg);
+	top: 560px;
+	left: 340px;
+}
+
+.orange1 {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+	top: 4px;
+	left: 580px;
+	background-color: #fc7f01;
+	background: -webkit-gradient(radial, 40 60, 0, 50 70, 70,
+            from(#f9d8be), color-stop(30%, #fbc36f), to(#fc7f01));
+	border-radius: 100%;
+}
+
+.leave1 {
+	position: absolute;
+	width: 80px; 
+	height: 70px;
+	background-color: #459c05; 
+	background: -webkit-gradient(radial, 90 20, 0, 80 10, 70,
+            from(#b2d994), color-stop(30%, #b2d994), to(#459c05));
+	-moz-border-radius: 0px 100px;
+	-webkit-border-radius: 0px 100px;
+	border-radius: 0px 60px;
+	transform: rotate(-30deg);
+	top: -40px;
+	left: 570px;
+}
+
+.screen4 {
+	position: absolute;
+	width: 130px;
+	height: 7px;
+	top: 430px;
+	left: 550px;
+	background-color: #010101;
+	border-radius: 2%;
+	border-top: 5px solid #b9b3a3;
+	border-bottom: 5px solid #a6a18e;
+	border-right: 13px solid #aba692;
+	border-left: 13px solid #ceccc0;
+}
+
+.screen3 {
+	position: absolute;
+	width: 242px;
+	height: 180px;
+	top: 185px;
+	left: 458px;
+	background-image: -webkit-gradient(radial, 50% 20%, 10, 50% 50%,120, from(#616161), to(#010101));
+	border-radius: 50% / 9%;
+}
+
+.screen3:before {
+	content: '';
+	position: absolute;
+	top: 8%;
+  bottom: 9%;
+  right: -2%;
+  left: -2%;
+  background: inherit;
+  border-radius: 2% / 40%;
+}
+
+.screen2 {
+	position: absolute;
+	width: 244px;
+	height: 145px;
+	top: 175px;
+	left: 444px;
+	background-color: #e2dcd0;
+	border-radius: 2%;
+	border-top: 25px solid #817d64;
+	border-bottom: 30px solid #a5a291;
+	border-right: 13px solid #9a947e;
+	border-left: 13px solid #a9a99d;
+}
+
+.screen1 {
+	position: absolute;
+	width: 312px;
+	height: 366px;
+	top: 156px;
+	left: 422px;
+	background-color: #b7b4a5;
+	border-radius: 2%;
+}
+
+.screen {
+	position: absolute;
+	width: 310px;
+	height: 360px;
+	top: 135px;
+	left: 410px;
+	border-top: 25px solid #d2cfc6;
+	border-bottom: 30px solid #aba493;
+	border-right: 13px solid #938d7b;
+	border-left: 13px solid #827d6a;
+	border-radius: 2%;
+}
+
+.bottle3{
+	position: absolute;
+	width: 90px;
+	height: 20px;
+	top: 330px;
+	left: 810px;
+	background: #feebe8;
+	border-radius: 30px;
+	opacity: 0.7;
+}
+
+.bottle2 {
+	position: absolute;
+	width: 170px;
+	height: 320px;
+	top: 410px;
+	left: 770px;
+	background: #feebe8;
+	border-bottom-left-radius: 5%;
+	border-bottom-right-radius: 5%;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+	opacity: 0.7;
+}
+
+
+.bottle1 {
+	position: absolute;
+	width: 74px;
+	height: 60px;
+	top: 350px;
+	left: 818px;
+	background: #feebe8;
+	opacity: 0.7;
+
+}
+
+.cork {
+	position: absolute;
+	width: 62px;
+	height: 60px;
+	background: #8a451c;
+	top: 304px;
+	left: 824px;
+
+}
+.cork1{
+	position: absolute;
+	width: 62px;
+	height: 12px;
+	background: #c37142;
+	top: 298px;
+	left: 824px;
+	border-radius: 50%;
+}
+
+

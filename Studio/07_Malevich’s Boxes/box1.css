@@ -1,0 +1,12 @@
+ #box1 {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        position: fixed;
+        left: 20%;
+        top: 10%;
+        -ms-transform: rotate(7deg); /* IE 9 */
+        -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+        transform: rotate(7deg);
+    }  
+ 

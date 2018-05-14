@@ -1,0 +1,38 @@
+ #box1 {
+        width: 1000px;
+        height: 100px;
+        background-color: #dcd0c0;
+        position: fixed;
+        top: 50%;
+        -ms-transform: rotate(7deg); /* IE 9 */
+        -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+        transform: rotate(40deg);
+        opacity: 0.8;
+
+    }  
+
+    
+    
+  #box2 {
+        width: 1000px;
+        height: 100px;
+        background-color: #da635d;
+        position: fixed;
+        top: 50%;
+        -ms-transform: rotate(-20deg); /* IE 9 */
+        -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+        transform: rotate(-40deg);
+        opacity: 0.8;
+    }
+
+#box3 {
+        width: 1000px;
+        height: 100px;
+        background-color:   #4e4e56;
+        position: fixed;
+        top: 50%;
+        -ms-transform: rotate(8deg); /* IE 9 */
+        -webkit-transform: rotate(8deg); /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+        opacity: 0.8;
+    } 
