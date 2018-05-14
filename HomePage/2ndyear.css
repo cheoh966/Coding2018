@@ -1,0 +1,435 @@
+body{
+    background-color: #FFF200;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: bebas;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 150px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #FFF200;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+
+
+.dropdown:hover a.dropbtnm span {
+    display: none;
+}
+.dropdown:hover a.dropbtnm:after {
+    content: 'main';
+}
+
+.dropdown:hover a.dropbtnp span {
+    display: none;
+}
+.dropdown:hover a.dropbtnp:after {
+    content: 'portfolio';
+}
+
+.dropdown:hover a.dropbtn1 span {
+    display: none;
+}
+.dropdown:hover a.dropbtn1:after {
+    content: 'freshman';
+}
+
+
+
+.dropbtn2 {
+    background-color: #FFF200
+}
+
+.dropdown:hover a.dropbtn3 span {
+    display: none;
+}
+.dropdown:hover a.dropbtn3:after {
+    content: 'junior';
+}
+
+.dropdown:hover a.dropbtn4 span {
+    display: none;
+}
+.dropdown:hover a.dropbtn4:after {
+    content: 'senior';
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    color: yellow;
+    background-color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Photo */
+.box {
+    position: absolute;
+    width: 35%;
+    height: 85%;
+    background-color: white;
+    top: 10%;
+}
+
+
+.s {
+    font-size: 30px;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*img*/
+
+
+
+#clock {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #clock img{
+        width: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #clock:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+    #text {
+        position: relative;
+        color: white;
+        font-size: 40px;
+        top: 30%;        
+    }
+    
+
+#hand {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #hand img{
+        width: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #hand:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+    
+
+#container {
+    position: absolute;
+    left: 65%;
+    top: 10%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #container img{
+        width: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #container:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+
+
+#still {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #still img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #still:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+
+
+#word {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #word img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #word:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+
+
+#mix {
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #mix img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #mix:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+
+#tree {
+    position: absolute;
+    left: 15%;
+    top: 90%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #tree img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #tree:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+
+#html1 {
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #html1 img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #html1:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+
+#html2 {
+    position: absolute;
+    left: 65%;
+    top: 90%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #html2 img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #html2:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+#html3 {
+    position: absolute;
+    left: 15%;
+    top: 130%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #html3 img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #html3:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+
+#html4 {
+    position: absolute;
+    left: 40%;
+    top: 130%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #html4 img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #html4:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+
+#html1 {
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px solid white;
+   }
+
+    #html1 img{
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+        #html1:hover img{
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+ㄴㅈㄴ
