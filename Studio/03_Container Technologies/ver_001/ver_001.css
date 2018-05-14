@@ -1,0 +1,13 @@
+#color {
+	position: relative;
+	left: 35%;
+	width: 5in;
+	height: 7in;
+}
+
+#roomtone {
+	position: relative;
+	left: 37%;
+	top: 60%;
+	font-weight: 800;
+}

@@ -1,0 +1,198 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>JavaScript Event KeyCodes</title>
+ 
+  <!-- <link rel="stylesheet" href="key.css"> -->
+
+  <style>
+    html, body {
+      font-size: 30px;
+      font: arial;
+    }
+    .half{
+      position: relative;
+      float: left;
+      width: 50%;
+      height: 100vh;
+    }
+
+    .right {
+      top: 100px;
+      right: 15%;
+      background-color: pink;
+      width: 300px;
+      height: 600px;
+      border: solid 20px white;
+      position: absolute;
+      
+    }
+
+    img {
+    	height: 50px;
+    }
+
+    .l {
+    	background-color: grey;
+    }
+
+    .r {
+    	background-color: pink;
+    }
+
+    p {
+      font-family: bebas;
+      top: 30px;
+      left: 40%;
+      color: white;
+      position: absolute;
+    }
+
+    textarea {
+      top: 100px;
+      left: 15%;
+      background-color: grey;
+      width: 300px;
+      height: 600px;
+      border: solid 20px white;
+      position: absolute;
+      font-family: bebas;
+      font-size: 30px;
+          }
+  </style>
+</head>
+<body>
+  <div class="half l">
+      <p>Type in!</p>
+      <textarea id="myTextArea" rowsf="3" cols="80"></textarea>
+      <!-- <input type="submit"> -->
+  </div>
+ 
+  <div class="half r">
+      <div class="right">
+      </div>
+  </div>
+
+  
+
+
+  </span>
+
+
+  <!-- <script src="key.js"></script> -->
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+    $( window ).keydown(function( event ) {
+
+      // $("img").remove()
+        if ( event.which == 65 ) {
+          $(".right").append("<img src='Asset/a.png' />")
+        }
+        if ( event.which == 66 ) {
+          $(".right").append("<img src='Asset/b.png' />")
+        }
+        if ( event.which == 67 ) {
+          $(".right").append("<img src='Asset/c.png' />")
+        }
+        if ( event.which == 68 ) {
+          $(".right").append("<img src='Asset/d.png' />")
+        }
+        if ( event.which == 69 ) {
+          $(".right").append("<img src='Asset/e.png' />")
+        }
+        if ( event.which == 70 ) {
+          $(".right").append("<img src='Asset/f.png' />")
+        }
+        if ( event.which == 71 ) {
+          $(".right").append("<img src='Asset/g.png' />")
+        }
+        if ( event.which == 72 ) {
+          $(".right").append("<img src='Asset/h.png' />")
+        }
+        if ( event.which == 73 ) {
+          $(".right").append("<img src='Asset/i.png' />")
+        }
+        if ( event.which == 74 ) {
+          $(".right").append("<img src='Asset/j.png' />")
+        }
+        if ( event.which == 75 ) {
+          $(".right").append("<img src='Asset/k.png' />")
+        }
+        if ( event.which == 76 ) {
+          $(".right").append("<img src='Asset/l.png' />")
+        }
+        if ( event.which == 77 ) {
+          $(".right").append("<img src='Asset/m.png' />")
+        }
+        if ( event.which == 78 ) {
+          $(".right").append("<img src='Asset/n.png' />")
+        }
+        if ( event.which == 79 ) {
+          $(".right").append("<img src='Asset/o.png' />")
+        }
+        if ( event.which == 80 ) {
+          $(".right").append("<img src='Asset/p.png' />")
+        }
+        if ( event.which == 81 ) {
+          $(".right").append("<img src='Asset/q.png' />")
+        }
+        if ( event.which == 82 ) {
+          $(".right").append("<img src='Asset/r.png' />")
+        }
+        if ( event.which == 83 ) {
+          $(".right").append("<img src='Asset/s.png' />")
+        }
+        if ( event.which == 84 ) {
+          $(".right").append("<img src='Asset/t.png' />")
+        }
+        if ( event.which == 85 ) {
+          $(".right").append("<img src='Asset/u.png' />")
+        }
+        if ( event.which == 86 ) {
+          $(".right").append("<img src='Asset/v.png' />")
+        }
+        if ( event.which == 87 ) {
+          $(".right").append("<img src='Asset/w.png' />")
+        }
+        if ( event.which == 88 ) {
+          $(".right").append("<img src='Asset/x.png' />")
+        }
+        if ( event.which == 89 ) {
+          $(".right").append("<img src='Asset/y.png' />")
+        }
+        if ( event.which == 90 ) {
+          $(".right").append("<img src='Asset/z.png' />")
+        }
+        if ( event.which == 13 ) {
+          $(".right").append("<br/>")
+        }
+        if ( event.which == 32 ) {
+          $(".right").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+        }
+        if ( event.which == 190 ) {
+          $(".right").append(".")
+        }
+        if ( event.which == 48 ) {
+          $(".right").append("Delete")
+        }
+        if ( event.which == 186 ) {
+          $(".right").append(":")
+        }
+        if ( event.which == 222 ) {
+          $(".right").append("'")
+        }
+        if ( event.which == 188 ) {
+          $(".right").append(",")
+        }
+        
+
+  });
+
+
+</script>
+</body>
+</html>

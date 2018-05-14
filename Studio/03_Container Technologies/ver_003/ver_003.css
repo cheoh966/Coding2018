@@ -1,0 +1,149 @@
+#roomtone {
+	position: absolute;
+	left: 37%;
+	top: 60%;
+	font-weight: 800;
+}
+
+/* side bar */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 200px; 
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+.down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+/* color blocks */
+
+.color {
+		position: absolute;
+		display: flex;
+		flex-wrap: wrap;
+		width: 5in;
+		top: 30%;
+		left: 40%;
+	}
+
+	.block {
+		 display: flex;
+	    margin: 0px 0;
+	    padding:;
+	    width: 10px;
+	    height: 300px;
+	    background-color: black;
+	    text-align: center;
+	    font-size: 20px; 
+	    align-items: center;
+	    justify-content: center;
+	    box-sizing: border-box;
+	}
+
+	.b1 {
+		background-color: #559B55;
+	}
+	.b2 {
+		background-color: #66758C;
+	}
+	.b3 {
+		background-color: #AA464E;
+	}
+	.b4 {
+		background-color: yellow;
+	}
+	.b5 {
+		background-color: red;
+	}
+	.b6 {
+		background-color: purple;
+	}
+	.b7 {
+		background-color: #004560;
+	}
+	.b8 {
+		background-color: #009970;
+	}
+	.b9 {
+		background-color: #084593;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}

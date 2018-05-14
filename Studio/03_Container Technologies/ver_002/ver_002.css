@@ -1,0 +1,112 @@
+#roomtone {
+	position: relative;
+	left: 37%;
+	top: 60%;
+	font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+.color {
+	margin:0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		width: 5in;
+		top: 30%;
+	}
+
+	.block {
+		 display: flex;
+	    margin: 0px 0;
+	    padding:;
+	    width: 10px;
+	    height: 300px;
+	    background-color: black;
+	    text-align: center;
+	    font-size: 20px; 
+	    align-items: center;
+	    justify-content: center;
+	    box-sizing: border-box;
+	}
+
+	.b1 {
+		background-color: #559B55;
+	}
+	.b2 {
+		background-color: #66758C;
+	}
+	.b3 {
+		background-color: #AA464E;
+	}
+	.b4 {
+		background-color: yellow;
+	}
+	.b5 {
+		background-color: red;
+	}
+	.b6 {
+		background-color: purple;
+	}
+	.b7 {
+		background-color: #004560;
+	}
+	.b8 {
+		background-color: #009970;
+	}
+	.b9 {
+		background-color: #084593;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}
+	.A {
+		background-color: white;
+	}

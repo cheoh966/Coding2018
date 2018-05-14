@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ver_04</title>
+	<style>
+		html,body {
+		}
+		img {
+    		height: 100px;
+    	}
+    	img:hover {
+    		opacity: 0.2;
+    	}
+
+    	.board {
+    		position: relative;
+    		float: top;
+    		background-color: pink;
+    		width: 100%;
+    		}
+	</style>
+
+	<style>
+		html, body, div, h1, h2, h3, h4, h5, p, a, ul, ol, li, span {
+		margin:0;
+		padding:0;
+		vertical-align: baseline;
+		text-decoration:none;
+		}
+		.clearfix:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibly: hidden;
+		}
+		#wrapper {
+		  position: relative;
+		  width: 500px;
+		  margin: 0px auto;
+		  font-family: Tahoma;
+		  background: rgba(255,255,255,.3);
+		  border-radius: 20px;
+		  padding: 50px 0;
+		}
+		h1,h2,h3 {
+			color: rgba(119,115,107,1);
+			text-shadow: 1px 1px 1px rgba(59,55,47,.8);
+		}
+		h1 {
+			text-align: center;
+		}
+		h2 {
+			display: block;
+			float: left;
+			clear: left;
+			padding: 0 0 0 10px;
+			border-left: 20px solid transparent;
+			margin: 0 0 10px 0;
+			line-height: 20px;
+			-webkit-transition: border-color .6s linear;
+			-moz-transition: border .6s linear;
+			-o-transition: border .6s linear;
+		}
+		#field {
+			height: 20px;
+			width: 320px;
+			padding: 10px;
+		  margin: 20px 0 0 76px;
+		  text-align: center;
+		  font-size:120%;
+		  border: 2px solid rgba(119,115,107,1);
+		  border-radius: 10px;
+		  box-shadow: 1px 1px 4px 0px rgba(0,0,0,.5) inset;
+		  -webkit-transition: background .6s linear;
+			-moz-transition: background .6s linear;
+			-o-transition: background .6s linear;
+		}
+		#activate {
+			display: block;
+		  width: 100px;
+		  margin: 20px auto 0;
+		  text-align:center;
+		  text-transform: uppercase;
+		}
+		#keyboard {
+		  display: none;
+		  position: relative;
+			width: 297px;
+		  margin: 30px auto 0;
+			padding: 10px;
+			border: 2px solid #555;
+		  border-radius: 15px;
+		  background: rgba(119,115,107,.2);
+		  box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+		}
+		#keyboard>div {
+			float: left;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+		  font-size:90%;
+			margin:0 5px 5px 0;
+			border: 1px solid #555;
+			background: rgba(119,115,107,.6);
+		  cursor: pointer;
+		  border-radius:3px;
+		}
+		#keyboard #q,
+		#keyboard #a,
+		#keyboard #z,
+		#keyboard #shift {
+			clear: left;
+		}
+		#keyboard #shift {
+		 width: 65px; 
+		}
+		#keyboard #space {
+		 width: 70px; 
+		}
+		#keyboard #bspace {
+		 width: 70px; 
+		}
+		#keyboard #clear {
+		 width: 64px; 
+		}
+		#keyboard #q {
+		 margin-left: 13px;
+		}
+		#keyboard #a {
+		 margin-left: 27px; 
+		}
+		#keyboard #z {
+		  margin-left: 54px;
+		}
+		#keyboard>div:hover {
+		  background: gray;
+		}
+		#keyboard #close {
+		  position: absolute;
+		  top: -20px;
+		  right: -20px;
+		  width: 16px;
+		  height:16px;
+		  border-radius:8px;
+		  line-height:14px;
+		}
+	</style>
+</head>
+
+<body>
+		<div class="board">
+		</div>
+
+	<div id="wrapper" class="clearfix">
+ 		<input id="field" type="text" value="click">
+  		<div id="keyboard" class="clearfix">
+			<div class="char" id="q">q</div>
+		    <div class="char" id="w">w</div>
+		    <div class="char" id="e">e</div>
+		    <div class="char" id="r">r</div>
+		    <div class="char" id="t">t</div>
+		    <div class="char" id="y">y</div>
+		    <div class="char" id="u">u</div>
+		    <div class="char" id="i" data-key="73">i</div>
+		    <div class="char" id="o">o</div>
+		    <div class="char" id="p">p</div>
+		    <div class="char" id="a">a</div>
+		    <div class="char" id="s">s</div>
+		    <div class="char" id="d">d</div>
+		    <div class="char" id="f">f</div>
+		    <div class="char" id="g">g</div>
+		    <div class="char" id="h">h</div>
+		    <div class="char" id="j">j</div>
+		    <div class="char" id="k">k</div>
+		    <div class="char" id="l">l</div>
+		    <div class="char" id="z">z</div>
+		    <div class="char" id="x">x</div>
+		    <div class="char" id="c">c</div>
+		    <div class="char" id="v">v</div>
+		    <div class="char" id="b">b</div>
+		    <div class="char" id="n">n</div>
+		    <div class="char" id="m">m</div>
+		</div>
+	</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script>
+	$( window ).keydown( function() {
+		// $("img").remove()
+		if ( event.which == 65 ) {
+		  $(".board").append("<img src='Asset/a.png' />")
+		}
+		if ( event.which == 66 ) {
+		  $(".board").append("<img src='Asset/b.png' />")
+		}
+		if ( event.which == 67 ) {
+		  $(".board").append("<img src='Asset/c.png' />")
+		}
+		if ( event.which == 68 ) {
+		  $(".board").append("<img src='Asset/d.png' />")
+		}
+		if ( event.which == 69 ) {
+		  $(".board").append("<img src='Asset/e.png' />")
+		}
+		if ( event.which == 70 ) {
+		  $(".board").append("<img src='Asset/f.png' />")
+		}
+		if ( event.which == 71 ) {
+		  $(".board").append("<img src='Asset/g.png' />")
+		}
+		if ( event.which == 72 ) {
+		  $(".board").append("<img src='Asset/h.png' />")
+		}
+		if ( event.which == 73 ) {
+		  $(".board").append("<img src='Asset/i.png' />")
+		}
+		if ( event.which == 74 ) {
+		  $(".board").append("<img src='Asset/j.png' />")
+		}
+		if ( event.which == 75 ) {
+		  $(".board").append("<img src='Asset/k.png' />")
+		}
+		if ( event.which == 76 ) {
+		  $(".board").append("<img src='Asset/l.png' />")
+		}
+		if ( event.which == 77 ) {
+		  $(".board").append("<img src='Asset/m.png' />")
+		}
+		if ( event.which == 78 ) {
+		  $(".board").append("<img src='Asset/n.png' />")
+		}
+		if ( event.which == 79 ) {
+		  $(".board").append("<img src='Asset/o.png' />")
+		}
+		if ( event.which == 80 ) {
+		  $(".board").append("<img src='Asset/p.png' />")
+		}
+		if ( event.which == 81 ) {
+		  $(".board").append("<img src='Asset/q.png' />")
+		}
+		if ( event.which == 82 ) {
+		  $(".board").append("<img src='Asset/r.png' />")
+		}
+		if ( event.which == 83 ) {
+		  $(".board").append("<img src='Asset/s.png' />")
+		}
+		if ( event.which == 84 ) {
+		  $(".board").append("<img src='Asset/t.png' />")
+		}
+		if ( event.which == 85 ) {
+		  $(".board").append("<img src='Asset/u.png' />")
+		}
+		if ( event.which == 86 ) {
+		  $(".board").append("<img src='Asset/v.png' />")
+		}
+		if ( event.which == 87 ) {
+		  $(".board").append("<img src='Asset/w.png' />")
+		}
+		if ( event.which == 88 ) {
+		  $(".board").append("<img src='Asset/x.png' />")
+		}
+		if ( event.which == 89 ) {
+		  $(".board").append("<img src='Asset/y.png' />")
+		}
+		if ( event.which == 90 ) {
+		  $(".board").append("<img src='Asset/z.png' />")
+		}
+		if ( event.which == 13 ) {
+		  $(".board").append("<br/>")
+		}
+		if ( event.which == 32 ) {
+		  $(".board").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+		}
+		if ( event.which == 190 ) {
+		  $(".board").append(".")
+		}
+		if ( event.which == 48 ) {
+		  $(".board").append("Delete")
+		}
+		if ( event.which == 186 ) {
+		  $(".board").append(":")
+		}
+		if ( event.which == 222 ) {
+		  $(".board").append("'")
+		}
+		if ( event.which == 188 ) {
+		  $(".board").append(",")
+		}
+	});
+</script>
+
+
+
+
+
+<script>
+	// Variables
+	var string = "",
+	    isActive = 0,
+	    isShift = 0,
+			field = $('#field'),
+			keyboard = $('#keyboard'),
+			clear = $('#clear'),
+			space = $('#space'),
+			bspace = $('#bspace'),
+			shift = $('#shift');
+	// Keyboard activation
+	field.click(function() {
+		if (isActive) {
+			keyboard.fadeOut('slow');
+	    field.css('background','#FFF');
+			isActive=0;
+		} else {
+			keyboard.fadeIn('slow');
+	    field.attr('value',""); field.css('background','rgba(170,255,86,.3)');
+			isActive=1;
+		}
+	});
+	$('#close').click(function () {
+	  if (isActive) {
+			keyboard.fadeOut('slow');
+	    field.css('background','#FFF');
+			isActive=0;
+		}
+	});
+	// Numbers to Symbols
+	function numbersToSymbols() {
+		$('#1').html("!");
+		$('#2').html("@");
+		$('#3').html("#");
+		$('#4').html("$");
+		$('#5').html("%");
+		$('#6').html("^");
+		$('#7').html("&");
+		$('#8').html("*");
+		$('#9').html("(");
+		$('#0').html(")");
+		$('#-').html("_");
+	}
+	// Symbols to Numbers 
+	function symbolsToNumbers() {
+		$('#1').html("1");
+		$('#2').html("2");
+		$('#3').html("3");
+		$('#4').html("4");
+		$('#5').html("5");
+		$('#6').html("6");
+		$('#7').html("7");
+		$('#8').html("8");
+		$('#9').html("9");
+		$('#0').html("0");
+		$('#-').html("-");
+	}
+
+	// Char Buttons
+	$('.char,.number').click( function() {
+		var symbol = $(this).text();
+		if (isShift) {
+				$('.char,.number').css("text-transform","none");
+				isShift = 0;
+				string += symbol.toUpperCase();
+				symbolsToNumbers();
+		}  else {
+			string += symbol;
+		}
+	  field.attr("value",string);
+	  field.focus();
+	});
+</script>
+</body>
+
+</html>

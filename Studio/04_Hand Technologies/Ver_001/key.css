@@ -1,0 +1,37 @@
+  
+
+  body {
+    height:100%;
+    margin:0;
+    font-family: 'sans-serif', 'Helvetica';
+    color: pink;
+    overflow: hidden;
+  }
+  .display {
+    text-align: center;
+    display: table;
+    height:100%;
+    margin:0 auto;
+  }
+  .wrap {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  p {
+    font-size: 100px; 
+    font-size:40vmin;
+    text-align: center;
+    margin: 0;
+  }
+  p.text-display {
+    display: inline-block;
+    color: red;
+    font: bold 20px arial;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px 20px;
+    
+  }
+
+  
