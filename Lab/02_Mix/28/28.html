@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" href="26.css">
+<script>
+	/*var audio1 = document.getElementById("audio1");
+
+	function togglePlay() {
+    return audio1.paused ? audio1.play() : audio1.pause();*/
+
+    function play() {
+	var audio = document.getElementById("audio1");
+	audio.play();
+	}
+
+	/*document.getElementById('audio1').onclick = function() {
+    var sounds = document.getElementsByTagName('audio');
+  for(i=0; i<sounds.length; i++) sounds[i].pause();
+};*/
+
+	  /*document.getElementsByTagName("img").addEventListener("mouseout", function( event ) { 
+	  	    var sounds = document.getElementsByTagName('audio');
+	        for(i=0; i<sounds.length; i++) sounds[i].pause();
+} )*/
+
+
+</script>
+</head>
+
+<body>
+<embed src="asset/background.mp4" autostart="true" loop="true" hidden="true">
+
+<img id="eyes1" src="asset/eyes.gif">
+
+<h6 class="neon" data-text="[*** PLAY WITH IT ***]">*** PLAY WITH IT ***</h6>
+<marquee  behavior="scroll" direction="left" scrollamount="15">
+
+	<img src="asset/m1.png" value="play" onclick="play()">
+		<audio id="audio1" src="asset/m1.mp3" ></audio>
+
+	<img src="asset/m2.png" value="play" onclick="play()">
+		<audio id="audio2" src="asset/m2.mp3" ></audio>
+
+	<img src="asset/m3.png" value="play" onclick="play()">
+		<audio id="audio3" src="asset/m3.mp3" ></audio>
+
+	<img src="asset/m4.png" value="play" onclick="play()">
+		<audio id="audio4" src="asset/m4.mp3" ></audio>
+
+	<img src="asset/m5.png" value="play" onclick="play()">
+		<audio id="audio5" src="asset/m5.mp3" ></audio>
+
+	<img src="asset/m6.png" value="play" onclick="play()">
+		<audio id="audio6" src="asset/m6.mp3" ></audio>
+
+	<img src="asset/m7.png" value="play" onclick="play()">
+		<audio id="audio7" src="asset/m7.mp3" ></audio>
+
+</marquee>
+
+</body>
+
+</html>

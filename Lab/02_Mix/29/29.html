@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css"  href="29.css" />
+<script>
+	function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+
+
+
+</script>
+</head>
+
+<body>
+<embed src="asset/background.mp4" autostart="true" loop="true" hidden="true">
+
+<img id="eyes1" src="asset/eyes.gif">
+
+<h6 class="neon" data-text="[*** Click the images ***]">*** Click the images ***</h6>
+<marquee  behavior="scroll" direction="left" scrollamount="10">
+
+	<a href="A.html">
+		<img src="asset/m1.png" 
+			onmouseover="PlaySound('mySound1')" 
+			onmouseout="StopSound('mySound1')">
+			<audio id="mySound1" src="asset/m1.mp3" >
+			</audio>
+	</a>
+
+	<a href="B.html">
+		<img src="asset/m2.png" 
+			onmouseover="PlaySound('mySound2')" 
+	    	onmouseout="StopSound('mySound2')">
+			<audio id="mySound2" src="asset/m2.mp3" >
+			</audio>
+	</a>
+
+	<a href="C.html">
+		<img src="asset/m3.png" onmouseover="PlaySound('mySound3')" 
+	    onmouseout="StopSound('mySound3')">
+			<audio id="mySound3" src="asset/m3.mp3" ></audio>
+	</a>
+
+	<a href="D.html">
+		<img src="asset/m4.png" onmouseover="PlaySound('mySound4')" 
+	    onmouseout="StopSound('mySound4')">
+			<audio id="mySound4" src="asset/m4.mp3" ></audio></a>
+
+	<a href="E.html">
+		<img src="asset/m5.png" onmouseover="PlaySound('mySound5')" 
+	    onmouseout="StopSound('mySound5')">
+			<audio id="mySound5" src="asset/m5.mp3" ></audio></a>
+
+	<a href="F.html">
+		<img src="asset/m6.png" onmouseover="PlaySound('mySound6')" 
+	    onmouseout="StopSound('mySound6')">
+			<audio id="mySound6" src="asset/m6.mp3" ></audio></a>
+
+	<a href="G.html">
+		<img src="asset/m7.png" onmouseover="PlaySound('mySound7')" 
+	    onmouseout="StopSound('mySound7')">
+			<audio id="mySound7" src="asset/m7.mp3" ></audio></a>
+
+</marquee>
+
+</body>
+
+</html>
