@@ -1,0 +1,31 @@
+p {
+    font-family: bebas;
+    font-style: italic bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.plate {
+    width: 600px;
+    position: absolute;
+    bottom: 200px;
+    left: 400px;
+}
+
+.swiper-slide {
+    width: 50%;
+}
+#container{
+    width:100vw;
+    height:100vh;
+}
+
+
+button{
+    display:block;
+    height:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+

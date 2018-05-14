@@ -1,0 +1,42 @@
+body {
+	background-image: url("https://i.pinimg.com/originals/14/95/b4/1495b4d083f28bc6c829ca265788cbbc.gif");
+	background-size:     cover;                     
+}
+
+h6 {
+    color: white;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 40;
+    line-height: 80px;
+
+}
+
+marquee{
+	border: 0px solid;
+	position: absolute; 
+	top:40%; 
+	left:0%; 
+	z-index: 3;
+	width: 100%;
+	
+}
+
+marquee img {
+	width: 300px;
+	height: 300px;
+	opacity: 0.5;
+	border-radius: 50%;
+	transition:;
+}
+
+marquee img:hover {
+	width: 400px;
+	height: 400px;
+	opacity: 1;
+	border-radius: 50%;
+	transition:2s;
+
+}

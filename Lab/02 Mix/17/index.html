@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css">
+<script>
+	function play() {
+	var audio = document.getElementById("audio1");
+	audio.play();
+	}
+</script>
+</head>
+
+<body>
+<embed src="asset/music/background.mp4" autostart="true" loop="true" hidden="true">
+
+<h6>PLAY WITH IT:)</h6>
+<marquee  behavior="scroll" direction="left" scrollamount="15">
+	<img src="asset/image/a.jpg" value="play" onclick="play()">
+		<audio id="audio1" src="asset/music/audio1.mp3" ></audio>
+	<img src="asset/image/d.jpg">
+	<img src="asset/image/c.jpg">
+	<img src="asset/image/b.jpg">
+	<img src="asset/image/e.jpg">
+	<img src="asset/image/f.jpg">
+	<img src="asset/image/g.jpg">
+</marquee>
+
+</body>
+
+</html>

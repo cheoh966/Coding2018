@@ -1,0 +1,23 @@
+marquee{
+	border: 0px solid;
+	position: absolute; 
+	top:20%; 
+	left:0%; 
+	z-index: 3;
+	width: 100%;
+	
+}
+
+marquee img {
+	width: 400px;
+	opacity: 0.5;
+	border-radius: 50%;
+
+}
+
+marquee img:hover {
+	width: 400px;
+	opacity: 1;
+	border-radius: 50%;
+
+}

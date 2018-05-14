@@ -1,0 +1,80 @@
+body {
+	background-image: url("https://i.pinimg.com/originals/14/95/b4/1495b4d083f28bc6c829ca265788cbbc.gif");
+	background-size:     cover;                     
+}
+
+.neon {
+	position: absolute;
+    color: #fff;
+    top: 5%;
+    left: 40%;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 0;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 20px #ff005b;
+}
+
+.neon: after {
+	content: attr(data-text);
+	position: absolute;
+	top: 5%
+	left: 40%;
+	padding: 0 20px;
+	z-index: -1;
+	color: #ff005b
+	filter: blur(15px);
+}
+
+.neon:befor {
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	width: 100%;
+	height: 100%;
+	background: #fe3a80;
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+}
+
+#eyes1 {
+	transform: rotate(90deg);
+	width:50%;
+	height:130%;
+	top: -15%;
+	left:25%;
+	position: absolute;
+}
+
+marquee{
+	border: 0px solid;
+	position: absolute; 
+	top:40%; 
+	left:0%; 
+	z-index: 3;
+	width: 100%;
+	
+}
+
+marquee img {
+	width: 300px;
+	height: 300px;
+	opacity: 0.5;
+	border-radius: 50%;
+	transition:;
+}
+
+marquee img:hover {
+	width: 400px;
+	height: 400px;
+	opacity: 1;
+	border-radius: 50%;
+	transition:2s;
+
+}
