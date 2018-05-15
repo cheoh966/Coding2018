@@ -1,0 +1,82 @@
+body{
+	background-color: #FFF200;
+	width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: bebas;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    display: block;
+    display: inline-block;    
+    width: 100vw;
+}
+
+li:hover {
+    background-color: #FFF200;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+li.dropdown {
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown:hover a.dropbtnm span {
+	display: none;
+}
+.dropdown:hover a.dropbtnm:after {
+	content: 'experience   what   semantic   satiation   is';
+}
+.titlem {
+     font-size: 100px;
+    text-align: center;
+    top: 30%;
+    position: relative;}
+
+
+
+.titlem:hover a.title span {
+    display: none;
+}
+.titlem:hover a.title:after {
+    content: 'semantic satiation';
+}
+
+.contentm {
+    font-size: 20px;
+    text-align: center;
+    font-family: arial;
+    width: 50%;
+    left: 25%;
+    top: 35%;
+    position: relative;
+}
+
+
+.contentm:hover a.content span {
+    display: none;
+}
+.contentm:hover a.content:after {
+    content: 'is a psychological phenomenon in which repetition causes a word or phrase to temporarily lose meaning for the listener, who then perceives the speech as repeated meaningless sounds.';
+}

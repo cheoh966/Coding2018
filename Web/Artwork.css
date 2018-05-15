@@ -1,0 +1,119 @@
+body{
+	background-color: #FFF200;
+	width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: bebas;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {float: left;
+    width: 150px;
+}
+
+li:hover {
+    background-color: #FFF200;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+li.dropdown {
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown:hover a.dropbtnm span {
+	display: none;
+}
+.dropdown:hover a.dropbtnm:after {
+	content: 'experimentation';
+}
+
+.dropdown:hover a.dropbtnp span {
+	display: none;
+}
+.dropdown:hover a.dropbtnp:after {
+	content: 'morris';
+}
+
+.dropdown:hover a.dropbtn1 span {
+	display: none;
+}
+.dropdown:hover a.dropbtn1:after {
+	content: 'stimulus';
+}
+
+.dropdown:hover a.dropbtn2 span {
+	display: none;
+}
+.dropdown:hover a.dropbtn2:after {
+	content: 'characteristic';
+}
+
+.dropdown:hover a.dropbtn3 span {
+	display: none;
+}
+.dropdown:hover a.dropbtn3:after {
+	content: 'word';
+}
+
+.dropdown:hover a.dropbtn4 span {
+	display: none;
+}
+.dropdown:hover a.dropbtn4:after {
+	content: 'repetition';
+}
+
+.dropdown:hover a.dropbtn5 span {
+    display: none;
+}
+.dropdown:hover a.dropbtn5:after {
+    content: 'differential';
+}
+
+.dropdown:hover a.dropbtn6 span {
+    display: none;
+}
+.dropdown:hover a.dropbtn6:after {
+    content: 'factor';
+}
+
+/* Photo */
+img {
+    position: absolute;
+    height: 700px;
+    left: 30%;
+    top: 20%;
+    background-color: white;
+}
+
+p {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 60px;
+}
+
+
+
+
+
+
+
